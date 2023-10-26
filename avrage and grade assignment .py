@@ -28,9 +28,15 @@ def repeat():
         for i in range(5):
             sub = int(input(f"Enter score {i + 1}:"))
             scores.append(sub)
+            each_grade = determine_grade(sub)
+            print(f"The grade for the average score is {each_grade}")
+            
+            
 
         average_score = cal_average(scores)
         grade = determine_grade(average_score)
+
+       
 
         print(f"The average score is {average_score}")
         print(f"The grade for the average score is {grade}")
